@@ -4,6 +4,7 @@
   border-radius: 4px;
   color: var(--white);
   cursor: pointer;
+  background-color: var(--blue);
 }
 
 .primary {

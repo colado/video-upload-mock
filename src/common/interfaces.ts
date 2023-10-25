@@ -3,10 +3,16 @@ export interface Category {
   name: string;
 }
 
+export interface Format {
+  res: string;
+  size: number;
+}
+
 export interface Video {
   id: number;
   catIds: number[];
   name: string;
+  formats: {key: Format};
 }
 
 export interface Author {
@@ -20,4 +26,6 @@ export interface ProcessedVideo {
   name: string;
   author: string;
   categories: string[];
+  highestFormat: string;
+  releaseDate: string;
 }
